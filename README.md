@@ -21,7 +21,8 @@ gonna use the raspberry pi
 - [x] LCD screens for the face
 - [ ] Motors for movement and weapon activation
 - [ ] Underglow lights
-- [ ] batteries - have some in the garage and old bots 
+- [ ] batteries - have some in the garage and old bots
+- [ ] Body 
 
 ### moters 
 - 4 drive moters - maybe
@@ -36,14 +37,24 @@ gonna use the raspberry pi
 ### lights 
 - just some leds 
 
-## to do 
-- [ ] Make pi work 
+## to do main 
 - [ ] Research and decide on specific components
 - [ ] Desgin bot
-- [ ] Develop code for movements and weapon activation
-- [ ] Joe makes bot 
-- [ ] Design and create the LCD face
-- [ ] Implement underglow feature
-- [ ] Test and iterate on the robot for functionality
 - [ ] Consider adding additional features for customization
 - [ ] Have Fun
+
+## to do software 
+- [ ] Make pi work 
+- [ ] Develop code for movements and weapon activation
+- [ ] Design and create the LCD face
+- [ ] TEST IT WORKS 
+- [ ] Implement underglow feature
+- [ ] Test and iterate on the robot for functionality
+
+## to do hardware 
+- [ ] Research and decide on specific components
+- [ ] Desgin bot
+- [ ] chose battries 
+- [ ] chose moter and controle board 
+- [ ] Joe makes bot
+- [ ] Test and iterate on the robot for functionality
