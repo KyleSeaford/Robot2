@@ -34,7 +34,8 @@ gonna use the raspberry pi
 
 ### wepons 
 - wepon 1 - c saw
-- wepon 2 - axe / hammer 
+- wepon 2 - axe / hammer
+- ligher, big flame, looks cool could burn stuff 
 
 ### battries
 - 
@@ -47,7 +48,6 @@ gonna use the raspberry pi
 
 ### dimentions 
 - 
-
 
 ## TODO
 ### to do software 
