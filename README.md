@@ -27,20 +27,11 @@ gonna use the raspberry pi
 ### lcd screens 
 - need to make work maybe buy more 
 
-### moters 
-- joes job, need to find them 
-
 ### lights 
 - just some leds 
 
 ### dimentions 
 - 
-
-## to do main 
-- [ ] Research and decide on specific components
-- [ ] Desgin bot
-- [ ] Consider adding additional features for customization
-- [ ] Have Fun
 
 ## to do software 
 - [x] Make pi work
