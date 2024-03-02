@@ -44,7 +44,8 @@ gonna use the raspberry pi
 - [ ] Have Fun
 
 ## to do software 
-- [ ] Make pi work 
+- [x] Make pi work
+- [x] get fermilia with LEDS 
 - [ ] Develop code for movements and weapon activation
 - [ ] Design and create the LCD face
 - [ ] TEST IT WORKS 
