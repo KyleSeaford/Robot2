@@ -27,7 +27,7 @@ gonna use the raspberry pi
 - 2 wepon moters - [here](http://www.kyle-seaford.co.uk/)
 
 ### moter board 
-- L298N - [here]([http://www.kyle-seaford.co.uk/](https://thepihut.com/products/l298n-motor-stepper-driver?variant=31985562550334&currency=GBP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAiAuYuvBhApEiwAzq_YiQP_dD8LBw_XjnlppSZOwdWFIbAJQSApgeaOUpGNBAz5ulBfAQGCDhoCdPAQAvD_BwE#product-reviews))
+- L298N - [here](https://thepihut.com/products/l298n-motor-stepper-driver?variant=31985562550334&currency=GBP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAiAuYuvBhApEiwAzq_YiQP_dD8LBw_XjnlppSZOwdWFIbAJQSApgeaOUpGNBAz5ulBfAQGCDhoCdPAQAvD_BwE#product-reviews))
 
 ### controler
 - xbox, ps 
