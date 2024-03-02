@@ -16,7 +16,8 @@ gonna use the raspberry pi
 - [x] Raspberry Pi
 - [ ] LCD screens for the face
 - [ ] Motors for movement and weapon activation
-- [ ] Underglow lights
+- [ ] wepons 
+- [ ] lights
 - [ ] batteries - have some in the garage and old bots
 - [ ] Body
 
@@ -26,6 +27,13 @@ gonna use the raspberry pi
 
 ### lcd screens 
 - need to make work maybe buy more 
+
+### wepons 
+- wepon 1 - c saw
+- wepon 2 - axe / hammer 
+
+### battries
+- 
 
 ### lights 
 - just some leds 
