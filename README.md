@@ -44,7 +44,7 @@ gonna use the raspberry pi
 - just some leds
 
 ### lcd screens 
-- need to make work maybe buy more [here](https://www.winstar.com.tw/products/character-lcd-display-module/dot-matrix-lcd-module.htm)
+- need to make work maybe buy more [here](https://www.winstar.com.tw/products/character-lcd-display-module/dot-matrix-lcd-module.html)
 
 ### dimentions 
 - 
