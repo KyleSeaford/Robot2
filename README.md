@@ -14,19 +14,16 @@ gonna use the raspberry pi
 
 ## Components
 - [x] Raspberry Pi
-- [ ] LCD screens for the face
 - [ ] Motors for movement and weapon activation
 - [ ] wepons 
-- [ ] lights
 - [ ] batteries - have some in the garage and old bots
 - [ ] Body
+- [ ] LCD screens for the face
+- [ ] lights
 
 ### moters 
 - 4 drive moters - [here](http://www.kyle-seaford.co.uk/)
 - 2 wepon moters - [here](http://www.kyle-seaford.co.uk/)
-
-### lcd screens 
-- need to make work maybe buy more 
 
 ### wepons 
 - wepon 1 - c saw
@@ -36,7 +33,10 @@ gonna use the raspberry pi
 - 
 
 ### lights 
-- just some leds 
+- just some leds
+
+### lcd screens 
+- need to make work maybe buy more 
 
 ### dimentions 
 - 
