@@ -26,6 +26,9 @@ gonna use the raspberry pi
 - 4 drive moters - [here](http://www.kyle-seaford.co.uk/)
 - 2 wepon moters - [here](http://www.kyle-seaford.co.uk/)
 
+### controler
+- xbox, ps 
+
 ### wepons 
 - wepon 1 - c saw
 - wepon 2 - axe / hammer 
