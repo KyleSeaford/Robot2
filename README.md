@@ -21,8 +21,8 @@ gonna use the raspberry pi
 - [ ] Body
 
 ### moters 
-- 4 drive moters - [here]([htt](http://www.kyle-seaford.co.uk/))
-- 2 wepon moters - [here]([htt](http://www.kyle-seaford.co.uk/))
+- 4 drive moters - [here](http://www.kyle-seaford.co.uk/)
+- 2 wepon moters - [here](http://www.kyle-seaford.co.uk/)
 
 ### lcd screens 
 - need to make work maybe buy more 
