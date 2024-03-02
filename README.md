@@ -1,6 +1,6 @@
 # Robot2 - Raspberry Pi Battle Bot
 
-- https://macclesfieldac-my.sharepoint.com/:w:/r/personal/185357_macclesfield_ac_uk/Documents/robot%202%20initial%20thoughts.docx?d=w63a2e96dc0ea49afba2ec593eb38b3d0&csf=1&web=1&e=k7cgjb
+- [joes word document](https://macclesfieldac-my.sharepoint.com/:w:/r/personal/185357_macclesfield_ac_uk/Documents/robot%202%20initial%20thoughts.docx?d=w63a2e96dc0ea49afba2ec593eb38b3d0&csf=1&web=1&e=k7cgjb)
 
 ## ideas 
 rasbury pi battle bot type thing. like the old ones but better, have joes help 
