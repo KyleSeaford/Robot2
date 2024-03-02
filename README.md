@@ -23,7 +23,7 @@ gonna use the raspberry pi
 - [ ] lights
 
 ### moters 
-- 4 drive moters - yellow moters - [here]([http://www.kyle-seaford.co.uk/](https://thepihut.com/products/dc-gearbox-motor-tt-motor-200rpm-3-to-6vdc))
+- 4 drive moters - yellow moters - [here](https://thepihut.com/products/dc-gearbox-motor-tt-motor-200rpm-3-to-6vdc)
 - 2 wepon moters - [here](http://www.kyle-seaford.co.uk/)
 
 ### moter board 
