@@ -33,7 +33,9 @@ gonna use the raspberry pi
 ### dimentions 
 - 
 
-## to do software 
+
+## TODO
+### to do software 
 - [x] Make pi work
 - [x] get fermilia with LEDS 
 - [ ] Develop code for movements and weapon activation
@@ -42,7 +44,7 @@ gonna use the raspberry pi
 - [ ] Implement underglow feature
 - [ ] Test and iterate on the robot for functionality
 
-## to do hardware 
+### to do hardware 
 - [ ] Research and decide on specific components
 - [ ] chose battries 
 - [ ] chose moter and controle board
