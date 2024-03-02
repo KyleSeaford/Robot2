@@ -18,11 +18,11 @@ gonna use the raspberry pi
 - [ ] Motors for movement and weapon activation
 - [ ] Underglow lights
 - [ ] batteries - have some in the garage and old bots
-- [ ] Body 
+- [ ] Body
 
 ### moters 
-- 4 drive moters
-- 2 wepon moters
+- 4 drive moters - [here]([htt](http://www.kyle-seaford.co.uk/))
+- 2 wepon moters - [here]([htt](http://www.kyle-seaford.co.uk/))
 
 ### lcd screens 
 - need to make work maybe buy more 
