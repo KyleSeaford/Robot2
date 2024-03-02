@@ -18,6 +18,7 @@ gonna use the raspberry pi
 - [ ] wepons 
 - [ ] batteries - have some in the garage and old bots
 - [ ] Body
+- [ ] controler
 - [ ] LCD screens for the face
 - [ ] lights
 
@@ -47,9 +48,9 @@ gonna use the raspberry pi
 - [x] Make pi work
 - [x] get fermilia with LEDS 
 - [ ] Develop code for movements and weapon activation
-- [ ] Design and create the LCD face
-- [ ] TEST IT WORKS 
+- [ ] make contorler work 
 - [ ] Implement underglow feature
+- [ ] Design and create the LCD face
 - [ ] Test and iterate on the robot for functionality
 
 ### to do hardware 
