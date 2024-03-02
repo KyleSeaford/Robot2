@@ -1,15 +1,11 @@
 # Robot2 - Raspberry Pi Battle Bot
 
 ## ideas 
-arduino or rasbury pi battle bot type thing. like the old ones but better, have joes help 
+rasbury pi battle bot type thing. like the old ones but better, have joes help 
 - have a face on the front made from lcd screens that have randomly selected faces and faces that actervate when the weppons are in use aswell
 - needs underglow
 
 ### main boards
-#### arduino
-- pros - used in old ones, have the code already
-- cons - not use to code, need to learn c
-
 #### raspberry pi 
 - pros - i can do python
 - cons - can be complex to use
@@ -18,24 +14,27 @@ gonna use the raspberry pi
 
 ## Components
 - [x] Raspberry Pi
-- [x] LCD screens for the face
+- [ ] LCD screens for the face
 - [ ] Motors for movement and weapon activation
 - [ ] Underglow lights
 - [ ] batteries - have some in the garage and old bots
 - [ ] Body 
 
 ### moters 
-- 4 drive moters - maybe
-- 2 wepon moters - maybe
+- 4 drive moters
+- 2 wepon moters
 
 ### lcd screens 
-- got a blue 16x2 and a green 16x2 might get more
+- need to make work maybe buy more 
 
 ### moters 
 - joes job, need to find them 
 
 ### lights 
 - just some leds 
+
+### dimentions 
+- 
 
 ## to do main 
 - [ ] Research and decide on specific components
@@ -54,8 +53,8 @@ gonna use the raspberry pi
 
 ## to do hardware 
 - [ ] Research and decide on specific components
-- [ ] Desgin bot
 - [ ] chose battries 
-- [ ] chose moter and controle board 
+- [ ] chose moter and controle board
+- [ ] Desgin bot
 - [ ] Joe makes bot
 - [ ] Test and iterate on the robot for functionality
