@@ -6,6 +6,7 @@
 rasbury pi battle bot type thing. like the old ones but better, have joes help 
 - have a face on the front made from lcd screens that have randomly selected faces and faces that actervate when the weppons are in use aswell
 - needs underglow
+- flames 
 
 ### main boards
 #### raspberry pi 
