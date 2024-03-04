@@ -21,7 +21,7 @@ gonna use the raspberry pi
 - [ ] wepons 
 - [ ] batteries - have some in the garage and old bots
 - [ ] Body
-- [ ] controler
+- [x] controler
 - [ ] LCD screens for the face
 - [ ] lights
 
@@ -33,7 +33,8 @@ gonna use the raspberry pi
 - L298N - [here](https://thepihut.com/products/l298n-motor-stepper-driver?variant=31985562550334&currency=GBP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAiAuYuvBhApEiwAzq_YiQP_dD8LBw_XjnlppSZOwdWFIbAJQSApgeaOUpGNBAz5ulBfAQGCDhoCdPAQAvD_BwE#product-reviews)
 
 ### controler
-- xbox, ps 
+- xbox, ps
+- USING PS3 controler
 
 ### wepons 
 - wepon 1 - c saw
