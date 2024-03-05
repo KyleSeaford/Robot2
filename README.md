@@ -32,36 +32,36 @@ Gonna use the Raspberry Pi
 ### motor board 
 - L298N - [here](https://thepihut.com/products/l298n-motor-stepper-driver?variant=31985562550334&currency=GBP&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAiAuYuvBhApEiwAzq_YiQP_dD8LBw_XjnlppSZOwdWFIbAJQSApgeaOUpGNBAz5ulBfAQGCDhoCdPAQAvD_BwE#product-reviews)
 
-- how to use the board and moters [here](https://ozeki.hu/p_3002-how-to-setup-a-dc-motor-on-raspberry-pi.html)
+- How to use the board and motors [here](https://ozeki.hu/p_3002-how-to-setup-a-dc-motor-on-raspberry-pi.html)
 
 ### controller
 - Xbox, PS
-- USING xbox controller
+- Using Xbox controller
 
 ### weapons 
 - Weapon 1 - c saw
 - Weapon 2 - axe/hammer
-- lighter, big flame, looks cool could burn stuff 
+- Lighter, big flame, looks cool could burn stuff -- maybe maybe not depends on
 
 ### batteries
 - 
 
 ### lights 
-- just some LEDs, gonna have to boot leds to tell when to connect contoler 
+- Just some LEDs, gonna have to boot LEDs to tell when to connect the controller 
 
-### lcd screens 
-might not do, will do in number 2 
-- need to make work maybe buy more [here](https://www.winstar.com.tw/products/character-lcd-display-module/dot-matrix-lcd-module.html)
+### LCD screens 
+Might not do, will do in number 2 
+- Need to make work maybe buy more [here](https://www.winstar.com.tw/products/character-lcd-display-module/dot-matrix-lcd-module.html)
 
 ### dimensions  
 - 
 
 ## TODO
 ### to do software 
-- [x] Make pi work
-- [x] get familiar with LEDs 
+- [x] Make Pi work
+- [x] Get familiar with LEDs 
 - [ ] Develop code for movements and weapon activation
-- [x] make controller work 
+- [x] Make controller work 
 - [ ] Implement underglow feature
 - [ ] Design and create the LCD face -- not doing 
 - [ ] Test and iterate on the robot for functionality
