@@ -47,10 +47,10 @@ Gonna use the Raspberry Pi
 - 
 
 ### lights 
-- just some LEDs
+- just some LEDs, gonna have to boot leds to tell when to connect contoler 
 
 ### lcd screens 
-might not do
+might not do, will do in number 2 
 - need to make work maybe buy more [here](https://www.winstar.com.tw/products/character-lcd-display-module/dot-matrix-lcd-module.html)
 
 ### dimensions  
@@ -63,7 +63,7 @@ might not do
 - [ ] Develop code for movements and weapon activation
 - [x] make controller work 
 - [ ] Implement underglow feature
-- [ ] Design and create the LCD face
+- [ ] Design and create the LCD face -- not doing 
 - [ ] Test and iterate on the robot for functionality
 
 ### to do hardware 

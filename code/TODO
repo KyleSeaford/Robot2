@@ -1,0 +1,10 @@
+code inputted here when done, make pi connected to this repo so it can be auto uploaded. 
+
+TODO:
+    wire a motor control board and two motors for a side
+
+    one board, left right motors, 4 in total 2 each side 
+
+    second board, blade and hammer, blade just spins, hammer need to ask joe about it 
+
+    if hammer is special motor find out how to do if it's a normal one add max and min switches to the motors movement
