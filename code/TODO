@@ -8,3 +8,22 @@ TODO:
     second board, blade and hammer, blade just spins, hammer need to ask joe about it 
 
     if hammer is special motor find out how to do if it's a normal one add max and min switches to the motors movement
+
+
+MCB = motor control board
+
+each board gets 4 wires to pi:
+3 GPIO wires to first 3 pins next to the power blue bit 
+
+1 power
+    the power goes from pi and to the middle pin on MCB and the battery 
+
+    other side of the battery goes to the +12v on MCB 
+
+motor connects to the left or right blue bits 
+
+https://www.electronicshub.org/raspberry-pi-l298n-interface-tutorial-control-dc-motor-l298n-raspberry-pi/ 
+
+need to do the same with the LEDs basically, gonna be done with triggers for now left trigger for left side right trigger for right side 
+
+will also have another script so that you can use the left joycon to control the motors 

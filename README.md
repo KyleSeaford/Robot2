@@ -41,7 +41,7 @@ Gonna use the Raspberry Pi
 ### weapons 
 - Weapon 1 - c saw
 - Weapon 2 - axe/hammer
-- Lighter, big flame, looks cool could burn stuff -- maybe maybe not depends on
+- Lighter, big flame, looks cool could burn stuff -- maybe not depending on
 
 ### batteries
 - 
