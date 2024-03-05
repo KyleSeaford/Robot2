@@ -34,7 +34,7 @@ Gonna use the Raspberry Pi
 
 ### controller
 - Xbox, PS
-- USING PS3 controller
+- USING xbox controller
 
 ### weapons 
 - Weapon 1 - c saw
