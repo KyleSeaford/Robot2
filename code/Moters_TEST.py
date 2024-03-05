@@ -40,7 +40,7 @@ def reverse(sec):
     time.sleep(sec)
     gpio.cleanup()
 
-def left(sec):
+def right(sec):
     setUP()
     # Right motor backward
     gpio.output(17, False)
@@ -52,7 +52,7 @@ def left(sec):
     time.sleep(sec)
     gpio.cleanup()
 
-def right(sec):
+def left(sec):
     setUP()
     # Right motor forward
     gpio.output(17, True)
