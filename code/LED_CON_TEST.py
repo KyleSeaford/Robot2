@@ -16,7 +16,7 @@ GPIO.setup(LED_PIN_B, GPIO.OUT)
 GPIO.setup(LED_PIN_K, GPIO.OUT)
 
 def Start_delay():
-    # delay while the contoler is turend on
+    # delay while the contoler is turned on
     # Flash the LEDs every 5 seconds for 25 seconds
     
     # flashes all 3, once to tell its on 
