@@ -70,6 +70,6 @@ Might not do, will do in number 2
 - [x] Research and decide on specific components
 - [ ] choose batteries 
 - [ ] choose a motor and control board
-- [ ] Design bot
+- [x] Design bot
 - [ ] Joe makes bot
 - [ ] Test and iterate on the robot for functionality
