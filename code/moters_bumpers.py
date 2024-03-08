@@ -34,48 +34,6 @@ GPIO.setup(LED_PIN_A, GPIO.OUT)
 LED_PIN_B = 3
 GPIO.setup(LED_PIN_B, GPIO.OUT)
 
-def rightFORWARD():
-    global running
-    setUP()
-    # Right motor forward
-    GPIO.output(17, False)
-    GPIO.output(22, True)
-    # Left motor off
-    GPIO.output(23, False) 
-    GPIO.output(24, False)
-
-
-def rightBACK():
-    global running
-    setUP()
-    # Right motor backward
-    GPIO.output(17, True)
-    GPIO.output(22, False)
-    # Left motor off
-    GPIO.output(23, False) 
-    GPIO.output(24, False)
-
-def leftFORWARD():
-    global running    
-    setUP()
-    # Right motor off
-    GPIO.output(17, False)
-    GPIO.output(22, False)
-    # Left motor backward
-    GPIO.output(23, False) 
-    GPIO.output(24, True)
-
-def leftBACK():
-    global running
-    setUP()
-    # Right motor off
-    GPIO.output(17, False)
-    GPIO.output(22, False)
-    # left motors backwards
-    GPIO.output(23, True) 
-    GPIO.output(24, False)
-
-    
 def Start_delay():
     # delay while the controller is turned on
     # Flash the LEDs every 5 seconds for 25 seconds
@@ -90,16 +48,16 @@ def Start_delay():
         GPIO.output(LED_PIN_A, GPIO.LOW)
         GPIO.output(LED_PIN_B, GPIO.LOW)
 
-        time.sleep(2) # change back to 4
-
-    # flashes blue 4 times, time to turn on controller 
-    time.sleep(1)
-    for i in range(4):
-        GPIO.output(LED_PIN_A, GPIO.HIGH)
         time.sleep(1)
 
+    # flashes blue 4 times, time to turn on controller 
+    for i in range(5):
+        GPIO.output(LED_PIN_A, GPIO.HIGH)
+        
+        time.sleep(0.5)
+
         GPIO.output(LED_PIN_A, GPIO.LOW)
-        time.sleep(4) # change back to 4
+        time.sleep(0.5) # change back to 4
 
     # Flash the LEDs 3 times quickly to show its ready
     for i in range(3):
@@ -110,7 +68,7 @@ def Start_delay():
         GPIO.output(LED_PIN_B, GPIO.LOW)
         time.sleep(0.5)
 
-# Start_delay()
+Start_delay()
 
 # Find the Xbox Controller
 devices = [InputDevice(path) for path in list_devices()]
@@ -130,30 +88,73 @@ GPIO.output(LED_PIN_B, GPIO.HIGH)
 time.sleep(0.5)  
 GPIO.output(LED_PIN_B, GPIO.LOW)
 
+# Global variables to control motor state and threads
+running_left = False
+running_right = False
+thread_left = None
+thread_right = None
+
+def rightFORWARD():
+    global running_right
+    setUP()
+    while running_right:  # Keep running while the button is held down
+        # Right motor forward
+        GPIO.output(17, False)
+        GPIO.output(22, True)
+
+def leftFORWARD():
+    global running_left
+    setUP()
+    while running_left:  # Keep running while the button is held down
+        # Left motor forward
+        GPIO.output(23, False) 
+        GPIO.output(24, True)
+
+def stopMotors():
+    # Stop both motors
+    setUP()
+    GPIO.output(17, False)
+    GPIO.output(22, False)
+    GPIO.output(23, False)
+    GPIO.output(24, False)
+
+
 for event in device.read_loop():
     if event.type == ecodes.EV_KEY:
-        keyevent = categorize(event)
-        print('key event at {}, {} ({}), {}'.format(
-            event.timestamp(), event.code, keyevent.keycode[0], 'down' if event.value else 'up'))  
+        print('key event at {}, {}, {}'.format(
+            event.timestamp(), event.code, 'down' if event.value else 'up'))  
+        if event.code == 311:  # BTN_TL
+            if event.value == 1:  # Button press
+                setUP()
+                # Start left motor
+                GPIO.output(23, False) 
+                GPIO.output(24, True)
+            elif event.value == 0:  # Button release
+                setUP()
+                # Stop left motor
+                GPIO.output(23, False)
+                GPIO.output(24, False)
+
+        if event.code == 310:  # BTN_TR
+            if event.value == 1:  # Button press
+                setUP()
+                # Start right motor
+                GPIO.output(17, False)
+                GPIO.output(22, True)
+            elif event.value == 0:  # Button release
+                setUP()
+                # Stop right motor
+                GPIO.output(17, False)
+                GPIO.output(22, False)
         
-        if keyevent.keycode[0] == 'B':
-            if keyevent.keystate == 1:  # Button press
-                running = True
-                Thread(target=leftFORWARD).start()  # Start motor in a new thread
-            elif keyevent.keystate == 0:  # Button release
-                running = False  # Stop the motor
+            # SHUT DOWN EVERYTHING, XBOX button    
+        elif event.code == 172:  # xbox button
+            stopMotors()
+            for i in range(100):
+                GPIO.output(LED_PIN_B, GPIO.HIGH)
+                time.sleep(0.3)
+                GPIO.output(LED_PIN_B, GPIO.LOW)
+                time.sleep(0.3)
 
-        elif keyevent.keycode[0] == 'BTN_TR':
-            if keyevent.keystate == 1:  # Button press
-                running = True
-                Thread(target=rightFORWARD).start()  # Start motor in a new thread
-            elif keyevent.keystate == 0:  # Button release
-                running = False  # Stop the motor
-
-        # SHUT DOWN EVERYTHING, XBOX button    
-        elif keyevent.keycode[0] == 'K':
-            GPIO.output(LED_PIN_B, GPIO.HIGH)
-            time.sleep(1)
-            GPIO.output(LED_PIN_B, GPIO.LOW)
             GPIO.cleanup()
-            break
+            continue 
