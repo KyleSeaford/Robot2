@@ -115,9 +115,18 @@ def stopMotors():
     setUP()
     GPIO.output(17, False)
     GPIO.output(22, False)
+
     GPIO.output(23, False)
     GPIO.output(24, False)
 
+def reverseMoters():
+    # all moters in reverse 
+    setUP()
+    GPIO.output(17, True)
+    GPIO.output(22, False)
+
+    GPIO.output(23, True)
+    GPIO.output(24, False)
 
 for event in device.read_loop():
     if event.type == ecodes.EV_KEY:
@@ -146,15 +155,15 @@ for event in device.read_loop():
                 # Stop right motor
                 GPIO.output(17, False)
                 GPIO.output(22, False)
-        
-            # SHUT DOWN EVERYTHING, XBOX button    
+
+        # SHUT DOWN EVERYTHING, XBOX button    
         elif event.code == 172:  # xbox button
             stopMotors()
-            for i in range(100):
+            for i in range(10): # change back to 100 
                 GPIO.output(LED_PIN_B, GPIO.HIGH)
                 time.sleep(0.3)
                 GPIO.output(LED_PIN_B, GPIO.LOW)
                 time.sleep(0.3)
 
-            GPIO.cleanup()
+            #GPIO.cleanup()
             continue 
