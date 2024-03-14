@@ -91,8 +91,10 @@ GPIO.output(LED_PIN_B, GPIO.LOW)
 # Global variables to control motor state and threads
 running_left = False
 running_right = False
+running_reverse = False
 thread_left = None
 thread_right = None
+thread_reverse = None
 
 def rightFORWARD():
     global running_right
@@ -119,19 +121,23 @@ def stopMotors():
     GPIO.output(23, False)
     GPIO.output(24, False)
 
-def reverseMoters():
-    # all moters in reverse 
+def reverseMotes():
+    global running_reverse
     setUP()
-    GPIO.output(17, True)
-    GPIO.output(22, False)
+    while running_left:  # Keep running while the button is held down
+        # all motes in reverse 
+        GPIO.output(17, True)
+        GPIO.output(22, False)
 
-    GPIO.output(23, True)
-    GPIO.output(24, False)
+        GPIO.output(23, True)
+        GPIO.output(24, False)
 
 for event in device.read_loop():
     if event.type == ecodes.EV_KEY:
         print('key event at {}, {}, {}'.format(
             event.timestamp(), event.code, 'down' if event.value else 'up'))  
+        
+        # left motors forward
         if event.code == 311:  # BTN_TL
             if event.value == 1:  # Button press
                 setUP()
@@ -144,6 +150,7 @@ for event in device.read_loop():
                 GPIO.output(23, False)
                 GPIO.output(24, False)
 
+        # right motors forward
         if event.code == 310:  # BTN_TR
             if event.value == 1:  # Button press
                 setUP()
@@ -156,9 +163,10 @@ for event in device.read_loop():
                 GPIO.output(17, False)
                 GPIO.output(22, False)
 
-        if event.code == #put value here:  # BTN_A
+        # all motors reverse
+        if event.code == 299:  # BTN_A
             if event.value == 1:  # Button press
-                reverseMoters()
+                reverseMotes()
             elif event.value == 0:  # Button release
                 stopMotors()
 
