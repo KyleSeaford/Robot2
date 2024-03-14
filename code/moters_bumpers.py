@@ -22,6 +22,16 @@ def setUP():
     # Left motor 
     GPIO.setup(23, GPIO.OUT)
     GPIO.setup(24, GPIO.OUT)
+    
+    # saw motor 
+    # change pin to gpio pin number
+    GPIO.setup(pin, GPIO.OUT)
+    GPIO.setup(pin, GPIO.OUT)
+    
+    # hammer motor
+    # change pin to gpio pin number
+    GPIO.setup(pin, GPIO.OUT)
+    GPIO.setup(pin, GPIO.OUT)
 
 # Set up the GPIO pins
 GPIO.setmode(GPIO.BCM)
@@ -88,13 +98,16 @@ GPIO.output(LED_PIN_B, GPIO.HIGH)
 time.sleep(0.5)  
 GPIO.output(LED_PIN_B, GPIO.LOW)
 
+# movement motors 
 # Global variables to control motor state and threads
 running_left = False
 running_right = False
 running_reverse = False
+running_hammer = False 
 thread_left = None
 thread_right = None
 thread_reverse = None
+thread_hammer = None 
 
 def rightFORWARD():
     global running_right
@@ -113,13 +126,17 @@ def leftFORWARD():
         GPIO.output(24, True)
 
 def stopMotors():
-    # Stop both motors
+    # Stop all motors
     setUP()
     GPIO.output(17, False)
     GPIO.output(22, False)
 
     GPIO.output(23, False)
     GPIO.output(24, False)
+    
+    # change pin too gpio pin 
+    GPIO.output(pin, False)
+    GPIO.output(pin, False)
 
 def reverseMotes():
     global running_reverse
@@ -132,6 +149,20 @@ def reverseMotes():
         GPIO.output(23, True)
         GPIO.output(24, False)
 
+# death zone
+def sawOn(): 
+    setUP()
+    # change pin too gpio pin 
+    GPIO.output(pin, False)
+    GPIO.output(pin, True)
+
+def hammer():
+    setUp()
+    #change pin too gpio pin 
+    GPIO.output(pin, False)
+    GPIO.output(pin, True)
+
+    
 for event in device.read_loop():
     if event.type == ecodes.EV_KEY:
         print('key event at {}, {}, {}'.format(
