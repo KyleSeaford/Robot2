@@ -156,6 +156,12 @@ for event in device.read_loop():
                 GPIO.output(17, False)
                 GPIO.output(22, False)
 
+        if event.code == #put value here:  # BTN_A
+            if event.value == 1:  # Button press
+                reverseMoters()
+            elif event.value == 0:  # Button release
+                stopMotors()
+
         # SHUT DOWN EVERYTHING, XBOX button    
         elif event.code == 172:  # xbox button
             stopMotors()
