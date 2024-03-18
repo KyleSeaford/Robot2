@@ -60,16 +60,16 @@ Might not do, will do in number 2
 ### to do software 
 - [x] Make Pi work
 - [x] Get familiar with LEDs 
-- [ ] Develop code for movements and weapon activation
+- [x] Develop code for movements and weapon activation
 - [x] Make controller work 
 - [ ] Implement underglow feature
 - [ ] Design and create the LCD face -- not doing 
-- [ ] Test and iterate on the robot for functionality
+- [x] Test and iterate on the robot for functionality
 
 ### to do hardware 
 - [x] Research and decide on specific components
 - [ ] choose batteries 
-- [ ] choose a motor and control board
+- [x] choose a motor and control board
 - [x] Design bot
 - [ ] Joe makes bot
 - [ ] Test and iterate on the robot for functionality
